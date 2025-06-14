@@ -7,99 +7,16 @@ class Home extends StatelessWidget {
 /// step5: container, column, main axis, cross axis
   @override
   Widget build(BuildContext context) {
-    // return Column(
-    //   // mainAxisAlignment: MainAxisAlignment.start,
-    //   // mainAxisAlignment: MainAxisAlignment.center,
-    //   // mainAxisAlignment: MainAxisAlignment.end,
-    //   // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    //   // mainAxisAlignment: MainAxisAlignment.spaceAround,
-    //   // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-    //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    //   crossAxisAlignment: CrossAxisAlignment.stretch,
-    //   children: [
-    //     Container(
-    //       color: Colors.blueAccent,
-    //       padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-    //       child: Text(
-    //         "Wirtz",
-    //         style: TextStyle(
-    //           fontSize: 20,
-    //           letterSpacing: 3,
-    //           color: Colors.white,
-    //         ),
-    //         ),
-    //     ),
-    //     Container(
-    //       color: Colors.blueAccent,
-    //       padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-    //       child: Text(
-    //         "Wirtz",
-    //         style: TextStyle(
-    //           fontSize: 20,
-    //           letterSpacing: 3,
-    //           color: Colors.white,
-    //         ),
-    //         ),
-    //     ),
-    //     Container(
-    //       color: Colors.blueAccent,
-    //       padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-    //       child: Text(
-    //         "Wirtz",
-    //         style: TextStyle(
-    //           fontSize: 20,
-    //           letterSpacing: 3,
-    //           color: Colors.white,
-    //         ),
-    //         ),
-    //     ),
-    //   ],
-    // );
-
-     return Row(
-    // step6: row, main axis, cross axis
-      // mainAxisAlignment: MainAxisAlignment.start,
-      // mainAxisAlignment: MainAxisAlignment.center,
-      // mainAxisAlignment: MainAxisAlignment.end,
+    // step6: image widget
+    return Column(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Container(
-          color: Colors.blueAccent,
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: Text(
-            "Wirtz",
-            style: TextStyle(
-              fontSize: 20,
-              letterSpacing: 3,
-              color: Colors.white,
-            ),
-            ),
-        ),
-        Container(
-          color: Colors.blueAccent,
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: Text(
-            "Wirtz",
-            style: TextStyle(
-              fontSize: 20,
-              letterSpacing: 3,
-              color: Colors.white,
-            ),
-            ),
-        ),
-        Container(
-          color: Colors.blueAccent,
-          padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: Text(
-            "Wirtz",
-            style: TextStyle(
-              fontSize: 20,
-              letterSpacing: 3,
-              color: Colors.white,
-            ),
-            ),
-        ),
+        Image.asset("assets/images/fl1.jpg"),
+        const SizedBox(height: 10),
+        Image.network(
+          "https://imagedelivery.net/c2SKP8Bk0ZKw6UDgeeIlbw/7611d546-a353-453b-dc7d-8eab636b3800/public"
+        )
       ],
     );
   }
