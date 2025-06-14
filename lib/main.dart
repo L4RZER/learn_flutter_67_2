@@ -8,6 +8,7 @@ void main() {
   // Step 1: appBar and body
   //runApp(const MyApp());
 
+
   //const app = MaterialApp(title: "My Title", home: Text("Hello World"));
   //runApp(app);
   //runApp(
@@ -31,7 +32,7 @@ void main() {
       home: Scaffold(
         appBar: AppBar(
           title: Text("My App"),
-          backgroundColor: const Color.fromARGB(255, 243, 33, 33),
+          backgroundColor: const Color.fromARGB(255, 236, 24, 169),
           centerTitle: true,
         ),
         body: Home(),
