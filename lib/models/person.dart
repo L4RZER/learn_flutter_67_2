@@ -77,9 +77,9 @@ Person({
   });
 }
 List<Person> personList = [
-  Person(name: "Isak", age: 22, job: Job.Developer),
-  Person(name: "Wirtz", age: 23, job: Job.Designer),
-  Person(name: "Kerkaze", age: 24, job: Job.Manager),
-  Person(name: "Frimpong", age: 25, job: Job.Analyst),
-  Person(name: "Mamardashvili", age: 26, job:  Job.Tester),
+  Person(name: "อีซัค", age: 22, job: Job.Developer),
+  Person(name: "เวียร์ต", age: 23, job: Job.Designer),
+  Person(name: "เคอร์เคซ", age: 24, job: Job.Manager),
+  Person(name: "ฟริมปิง", age: 25, job: Job.Analyst),
+  Person(name: "มามาร์ดาชวิลลี่", age: 26, job:  Job.Tester),
 ];

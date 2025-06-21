@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learn_flutter_67_2/models/person.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Item extends StatefulWidget {
   const Item({super.key});
@@ -29,7 +30,14 @@ class _ItemState extends State<Item> {
                 children: [
                   Text(
                     personList[index].name,
-                    style: const TextStyle(
+                    // style: const TextStyle(
+                    //   fontSize: 24,
+                    //   color: Colors.white,
+                    //   fontWeight: FontWeight.bold,
+                    // ),
+
+                    // Step 12: use google fonts
+                    style: GoogleFonts.kanit(
                       fontSize: 24,
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -37,7 +45,12 @@ class _ItemState extends State<Item> {
                   ),
                   Text(
                     "Job: ${personList[index].job.title}",
-                    style: const TextStyle(
+                    // style: const TextStyle(
+                    //   fontSize: 18,
+                    //   color: Colors.white,
+                    //   fontWeight: FontWeight.normal,
+                    // ),
+                    style: GoogleFonts.kanit(
                       fontSize: 18,
                       color: Colors.white,
                       fontWeight: FontWeight.normal,
@@ -45,7 +58,12 @@ class _ItemState extends State<Item> {
                   ),
                   Text(
                     personList[index].age.toString(),
-                    style: const TextStyle(
+                    // style: const TextStyle(
+                    //   fontSize: 18,
+                    //   color: Colors.white,
+                    //   fontWeight: FontWeight.normal,
+                    // ),
+                    style: GoogleFonts.kanit(
                       fontSize: 18,
                       color: Colors.white,
                       fontWeight: FontWeight.normal,
