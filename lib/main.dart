@@ -44,3 +44,23 @@ void main() {
   // );
   runApp(const AddForm());
 }
+
+// Step 16: Routing
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "My App",
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("My App"),
+          backgroundColor: Colors.pinkAccent,
+          centerTitle: true,
+        ),
+        body: const Item(),
+      ),
+    );
+  }
+}
